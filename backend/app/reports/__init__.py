@@ -1,0 +1,1 @@
+"""Attendance reports module."""

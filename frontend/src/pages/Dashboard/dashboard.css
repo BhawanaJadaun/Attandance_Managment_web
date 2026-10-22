@@ -1,0 +1,94 @@
+/* =========================================
+   DASHBOARD DARK MODE - FINAL OVERRIDE
+========================================= */
+
+html.dark .dashboard-page {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+/* Cards */
+html.dark .dashboard-page .stat-card,
+html.dark .dashboard-page .dashboard-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+/* Header */
+html.dark .dashboard-page .dashboard-header h1 {
+  color: #f8fafc !important;
+}
+
+html.dark .dashboard-page .dashboard-header p {
+  color: #94a3b8 !important;
+}
+
+/* Card headings */
+html.dark .dashboard-page .card-header h2 {
+  color: #f8fafc !important;
+}
+
+html.dark .dashboard-page .card-header p {
+  color: #94a3b8 !important;
+}
+
+/* Stat text */
+html.dark .dashboard-page .stat-info p {
+  color: #94a3b8 !important;
+}
+
+html.dark .dashboard-page .stat-value h2 {
+  color: #f8fafc !important;
+}
+
+/* Notification */
+html.dark .dashboard-page .notification-button {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+/* Quick actions */
+html.dark .dashboard-page .quick-action {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+html.dark .dashboard-page .quick-action:hover {
+  background: #1e293b !important;
+}
+
+/* Last 7 Days */
+html.dark .dashboard-page .card-header select {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+/* Chart */
+html.dark .dashboard-page .attendance-chart {
+  border-bottom-color: #334155 !important;
+}
+
+html.dark .dashboard-page .chart-column small {
+  color: #94a3b8 !important;
+}
+
+html.dark .dashboard-page .chart-value {
+  color: #a5b4fc !important;
+}
+
+/* Attendance progress */
+html.dark .dashboard-page .progress-container {
+  background: #334155 !important;
+}
+
+html.dark .dashboard-page .attendance-summary {
+  color: #cbd5e1 !important;
+}
+
+html.dark .dashboard-page .attendance-summary strong {
+  color: #f8fafc !important;
+}

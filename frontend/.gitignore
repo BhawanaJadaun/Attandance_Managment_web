@@ -1,0 +1,36 @@
+# Dependencies
+
+node_modules/
+
+# Production build
+
+dist/
+build/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Logs
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Testing
+
+coverage/
+
+# Editor and OS files
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vite
+
+vite.config.*.timestamp-*

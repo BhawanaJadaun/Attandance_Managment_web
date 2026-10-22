@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap");
+
+html,
+body {
+  font-family: "Lora", Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: "Lora", Georgia, serif;
+}
+/* =========================================================
+   GLOBAL THEME VARIABLES
+========================================================= */
+
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --secondary: #8b5cf6;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --text-primary: #172033;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+
+  --background: #f8fafc;
+  --surface: #ffffff;
+
+  --border: #e5e7eb;
+  --border-light: #eef2f7;
+}
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+/* =========================================================
+   DARK MODE VARIABLES
+========================================================= */
+
+html.dark {
+  color-scheme: dark;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --background: #0f172a;
+  --surface: #1e293b;
+
+  --border: #334155;
+  --border-light: #273449;
+}
+
+html.dark,
+html.dark body,
+html.dark #root {
+  background: var(--background) !important;
+  color: var(--text-primary) !important;
+}
+
+/* =========================================================
+   TAILWIND DARK MODE OVERRIDES
+========================================================= */
+
+html.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+html.dark .bg-slate-50 {
+  background-color: #0f172a !important;
+}
+
+html.dark .bg-slate-100 {
+  background-color: #273449 !important;
+}
+
+html.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+html.dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+html.dark .text-slate-700 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+html.dark .border-slate-200 {
+  border-color: #334155 !important;
+}
+
+html.dark .border-slate-100 {
+  border-color: #273449 !important;
+}
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+html.dark option {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+html.dark .hover\:bg-slate-50:hover {
+  background-color: #273449 !important;
+}
+
+html.dark .hover\:bg-slate-100:hover {
+  background-color: #334155 !important;
+}
+
+/* =========================================================
+   INDIGO
+========================================================= */
+
+html.dark .bg-indigo-50 {
+  background-color: #25245c !important;
+}
+
+html.dark .text-indigo-900 {
+  color: #e0e7ff !important;
+}
+
+html.dark .text-indigo-700 {
+  color: #c7d2fe !important;
+}
+
+/* =========================================================
+   GREEN
+========================================================= */
+
+html.dark .bg-emerald-50 {
+  background-color: #052e1b !important;
+}
+
+html.dark .text-emerald-700 {
+  color: #6ee7b7 !important;
+}

@@ -1,0 +1,1 @@
+"""Lecture management package."""

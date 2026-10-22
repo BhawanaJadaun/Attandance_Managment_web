@@ -1,0 +1,298 @@
+// =========================================================
+// REPORT FILTER DUMMY DATA
+// =========================================================
+
+// Course options
+export const COURSE_OPTIONS = [
+  "B.Tech",
+  "MCA",
+  "BCA",
+  "M.Tech",
+];
+
+// Department options
+export const DEPARTMENT_OPTIONS = [
+  "Computer Science & Engineering",
+  "Information Technology",
+  "Electronics & Communication",
+  "Mechanical Engineering",
+  "Civil Engineering",
+];
+
+// Semester options
+export const SEMESTER_OPTIONS = [
+  "Semester 1",
+  "Semester 2",
+  "Semester 3",
+  "Semester 4",
+  "Semester 5",
+  "Semester 6",
+  "Semester 7",
+  "Semester 8",
+];
+
+// Professor options
+export const PROFESSOR_OPTIONS = [
+  {
+    id: "PROF001",
+    name: "Dr. Rajesh Kumar",
+    department: "Computer Science & Engineering",
+    course: "MCA",
+    semester: "Semester 3",
+  },
+  {
+    id: "PROF002",
+    name: "Dr. Priya Sharma",
+    department: "Computer Science & Engineering",
+    course: "B.Tech",
+    semester: "Semester 5",
+  },
+  {
+    id: "PROF003",
+    name: "Mr. Amit Verma",
+    department: "Information Technology",
+    course: "B.Tech",
+    semester: "Semester 3",
+  },
+  {
+    id: "PROF004",
+    name: "Ms. Neha Singh",
+    department: "Computer Science & Engineering",
+    course: "BCA",
+    semester: "Semester 5",
+  },
+];
+
+// Subject options
+export const SUBJECT_OPTIONS = [
+  {
+    subjectCode: "MCA301",
+    subjectName: "Advanced Database Management System",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+  },
+  {
+    subjectCode: "MCA302",
+    subjectName: "Artificial Intelligence",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+  },
+  {
+    subjectCode: "BTECH501",
+    subjectName: "Computer Networks",
+    course: "B.Tech",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    professorId: "PROF002",
+    professorName: "Dr. Priya Sharma",
+  },
+  {
+    subjectCode: "BTECH502",
+    subjectName: "Operating System",
+    course: "B.Tech",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    professorId: "PROF002",
+    professorName: "Dr. Priya Sharma",
+  },
+  {
+    subjectCode: "IT301",
+    subjectName: "Web Technology",
+    course: "B.Tech",
+    department: "Information Technology",
+    semester: "Semester 3",
+    professorId: "PROF003",
+    professorName: "Mr. Amit Verma",
+  },
+];
+
+// Lecture options
+export const LECTURE_OPTIONS = [
+  {
+    lectureCode: "LEC-MCA301-001",
+    subjectCode: "MCA301",
+    subjectName: "Advanced Database Management System",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-01",
+    startTime: "10:00",
+    endTime: "11:00",
+    status: "Completed",
+  },
+  {
+    lectureCode: "LEC-MCA302-001",
+    subjectCode: "MCA302",
+    subjectName: "Artificial Intelligence",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-02",
+    startTime: "11:00",
+    endTime: "12:00",
+    status: "Completed",
+  },
+  {
+    lectureCode: "LEC-BTECH501-001",
+    subjectCode: "BTECH501",
+    subjectName: "Computer Networks",
+    professorId: "PROF002",
+    professorName: "Dr. Priya Sharma",
+    course: "B.Tech",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    date: "2026-10-03",
+    startTime: "09:00",
+    endTime: "10:00",
+    status: "Completed",
+  },
+  {
+    lectureCode: "LEC-BTECH502-001",
+    subjectCode: "BTECH502",
+    subjectName: "Operating System",
+    professorId: "PROF002",
+    professorName: "Dr. Priya Sharma",
+    course: "B.Tech",
+    department: "Computer Science & Engineering",
+    semester: "Semester 5",
+    date: "2026-10-04",
+    startTime: "10:00",
+    endTime: "11:00",
+    status: "Completed",
+  },
+];
+
+// Student options
+export const STUDENT_OPTIONS = [
+  {
+    registrationNumber: "REG2026001",
+    rollNo: "MCA001",
+    name: "Bhawana Jadaun",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    status: "Active",
+  },
+  {
+    registrationNumber: "REG2026002",
+    rollNo: "MCA002",
+    name: "Vaishno Sharma",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    status: "Active",
+  },
+  {
+    registrationNumber: "REG2026003",
+    rollNo: "MCA003",
+    name: "Arti",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    status: "Active",
+  },
+  {
+    registrationNumber: "REG2026004",
+    rollNo: "MCA004",
+    name: "Anjali Singh",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    status: "Active",
+  },
+];
+
+// Attendance report records
+// Attendance is identified by Lecture Code + Registration Number
+export const ATTENDANCE_REPORT_DATA = [
+  {
+    lectureCode: "LEC-MCA301-001",
+    registrationNumber: "REG2026001",
+    rollNo: "MCA001",
+    studentName: "Bhawana Jadaun",
+    subjectCode: "MCA301",
+    subjectName: "Advanced Database Management System",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-01",
+    status: "Present",
+    present: true,
+  },
+  {
+    lectureCode: "LEC-MCA301-001",
+    registrationNumber: "REG2026002",
+    rollNo: "MCA002",
+    studentName: "Vaishno Sharma",
+    subjectCode: "MCA301",
+    subjectName: "Advanced Database Management System",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-01",
+    status: "Absent",
+    present: false,
+  },
+  {
+    lectureCode: "LEC-MCA301-001",
+    registrationNumber: "REG2026003",
+    rollNo: "MCA003",
+    studentName: "Arti",
+    subjectCode: "MCA301",
+    subjectName: "Advanced Database Management System",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-01",
+    status: "Present",
+    present: true,
+  },
+  {
+    lectureCode: "LEC-MCA302-001",
+    registrationNumber: "REG2026001",
+    rollNo: "MCA001",
+    studentName: "Bhawana Jadaun",
+    subjectCode: "MCA302",
+    subjectName: "Artificial Intelligence",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-02",
+    status: "Present",
+    present: true,
+  },
+  {
+    lectureCode: "LEC-MCA302-001",
+    registrationNumber: "REG2026002",
+    rollNo: "MCA002",
+    studentName: "Vaishno Sharma",
+    subjectCode: "MCA302",
+    subjectName: "Artificial Intelligence",
+    professorId: "PROF001",
+    professorName: "Dr. Rajesh Kumar",
+    course: "MCA",
+    department: "Computer Science & Engineering",
+    semester: "Semester 3",
+    date: "2026-10-02",
+    status: "Present",
+    present: true,
+  },
+];
